@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Karai Nozomu | Kyoto Univ</title>
+        <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+        <script type="text/javascript" src="{{ url_for('static', filename='jquery-3.4.1.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+    </head>
+    <body>
+        <header>
+            <h1>KARI NOZOMU</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#work">WORK</a></li>
+                    <li><a href="#ingenious">INGENIOUS</a></li>
+                </ul>  
+            </nav>
+        </header>
+        <img src="/static/night-sky.jpg" alt="" class="img-responsive">
+        <section class="about" id="about">
+            <p>
+                これはクラウド計算の最終課題です。
+                <br>
+                おしゃれな画像を並べるとなんかいい感じになりました。
+                <br>
+                単位ください。
+                <br>
+                自己紹介します。
+            </p>
+            <dl class="layout-table">
+                <dt>名前</dt>
+                <dd>唐井　希</dd> 
+                <dt>生年月日</dt>
+                <dd>1999年2月16日</dd>
+                <dt>出身地</dt>
+                <dd>愛知県</dd>
+                <dt>所属</dt>
+                <dd>京都大学工学部電気電子工学科</dd>
+            </dl>
+        </section>
+        <img src="/static/fireflower.jpg" alt="" class="img-responsive" style="margin-top: 0;">
+        <section class="work" id="work">
+            <p>
+                課題のために作成したものです。
+                <br>
+                あなたにおすすめのVtuberを教えてくれます。
+            </p>
+            <form method="POST">
+                <h2>好きなタイプは</h2>
+        
+                <tr>
+                    <td>
+                        <input type="radio" name="q1" value="a" id=q11 checked>
+                        <label class="button-style-label" for="q11">元気</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q1" id="q12" value="b">
+                        <label class="button-style-label" for="q12">大人</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q1" id="q13" value="c">
+                        <label class="button-style-label" for="q13">あほのこ</label>
+                    </td>
+                </tr>
+                <h2>あなたの部屋はどちらかというと</h2>
+                <tr>
+                    <td>
+                        <input type="radio" name="q2" id="q21" value="d" checked>
+                        <label class="button-style-label" for="q21">きれいなほうだ</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q2" id="q22" value="e">
+                        <label class="button-style-label" for="q22">汚いかもしれない</label>
+                    </td>
+                </tr>
+                <br>
+                <input type="submit" value="診断" class="submit-btn">
+            </form>
+        </section>
+        <section class="ingenious" id="ingenious">
+            <p>
+                HTMLとCSSは初めてだったので想像どおりのデザインにすることがまず難しかったです
+                <br>
+                ページのサイズを変更すると表示がおかしな形になってしまうこともあり調べたところflexboxという存在をしって非常にたすかりました
+                <br>
+                最初作った時なぜが見た目が古臭い感じになってしまったけどフォントや文字間隔、行間隔を変えるだけでおしゃれにみえてデザインってすごいなあと思いました
+                <br>
+                今までページのツールバーがついてくるのはツールバー自体が動いているのかと思っていたけど実はツールバーのほうが固定されていると知って楽しかった
+                <br>
+                Vtuber診断で質問毎にあったVtuberを見つけるのに一番時間をかけたかもしれない
+                <br>
+                写真は偉大
+            </p>
+        </section>
+    </body>
+</html>

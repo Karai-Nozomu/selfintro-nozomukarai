@@ -1,0 +1,129 @@
+body{
+    font-size: 12px;
+    line-height: 1.7;
+    font-family: sans-serif;
+    background: #181818;
+    color: rgba(255,255,255,0.45);
+    margin: 0;
+}
+
+p{
+    letter-spacing: .06em;
+    margin-bottom: 60px;
+}
+
+header{
+    position: fixed;
+    margin-top: 39;
+    margin-left: 100;
+    color: white;
+}
+
+header h1{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding-left: 0;
+    font-size: 20px;
+}
+
+li{
+    list-style: none;
+    letter-spacing: 1.3;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+td{
+    border: 5px rgba(255,255,255,0.45);
+    display: flex;
+}
+
+.img-responsive{
+    display: inline;
+    width: 100%;
+    height: 500px;
+    margin-top: 160px;
+    overflow: hidden;
+}
+
+.about{
+    width: 620px;
+    margin: 160 auto 160 auto;
+}
+
+.layout-table{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -19px;
+}
+
+.layout-table dt{
+    width: 110px;
+    border-bottom: 1px solid;
+    padding: 18px 0 21px;
+    margin: 0;
+}
+
+.layout-table dd{
+    width: 510px;
+    border-bottom: 1px solid;
+    padding: 18px 0 21px;
+    margin: 0;
+}
+
+.work{
+    margin: 160 auto 160 auto;
+    width: 620px;
+}
+
+.ingenious{
+    margin: 160 auto 160 auto;
+    width: 620px;
+}
+
+input[type="radio"] {
+    display: none;
+  }
+  .button-style-label {
+    display : inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    min-width: 100px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 160px;
+    border: 5px solid rgba(255,255,255,0.45);
+  }
+  .button-style-label:hover {
+    opacity: .8;
+  }
+  input[type="radio"]:checked + .button-style-label {
+    background:rgba(255,255,255,0.45);
+  }
+  input[type="radio"]:disabled + .button-style-label {
+    opacity: .4;
+    cursor: default;
+  }
+
+.submit-btn{
+    border-radius: 50%;
+    border: solid 2px rgba(255,255,255,0.45);
+    width: 120px;
+    height: 120px;
+    margin: 70 250 70 250;
+    text-align: center;
+    background: #181818;
+    color: rgba(255,255,255,0.45);
+    font-size: 22px;
+}
+  
+  .submit-btn:hover {
+    background: rgba(255,255,255,0.45);
+  }
